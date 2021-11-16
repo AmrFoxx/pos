@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxxM6wuqIj61tLrc4wSX0szh/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+        
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <title>JAVAPOS</title>
+    </head>
+    <body>
+        <div class="bg-dark p-3">
+            <div class="row mx-0 py-3 bg-light">
+                <div class="col-sm-8">
+                    <p>Order No. #88 <small calss="text-muted"> Today, 20 Mar 2021, 02:34 PM</small></p>
+                    <div class="card rounded-3 mb-3">
+                        <div class="card-body"> 
+                    <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-Foods-tab" data-bs-toggle="pill" data-bs-target="#pills-Foods" type="button" role="tab" aria-controls="pills-Foods" aria-selected="true">Foods</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-Drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-Drinks" type="button" role="tab" aria-controls="pills-Drinks" aria-selected="false">Drinks</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-Sweets-tab" data-bs-toggle="pill" data-bs-target="#pills-Sweets" type="button" role="tab" aria-controls="pills-Sweets" aria-selected="false">Sweets</button>
+                        </li>
+                        <li class="nav-item d-none" role="presentation">
+                          <button class="nav-link"  id="pills-Checkout-tab" data-bs-toggle="pill" data-bs-target="#pills-Checkout" type="button" role="tab" aria-controls="pills-Checkout" aria-selected="false">Checkout</button>
+                        </li>
+                      </ul>
+                     </div>
+                    </div>
+
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-Foods" role="tabpanel" aria-labelledby="pills-Foods-tab">
+                            <div class="row row-cols-1 row-cols-md-4 g-4">
+                                <div class="col">
+                                  <div class="card" onclick="orderbasket('Ceaser Salad',3.99);">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Ceaser Salad</h5>
+                                      <img draggable="false" src="file:///E:/New%20folder%20(2)/NewProj/responsive-website-restaurant-main/assets/img/plate1.png">
+                                     <!-- <p class="text-danger"><span>$</span>3.99</p> -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card"  onclick="orderbasket('Avocado',2.99);">
+   
+                                    <div class="card-body">
+                                      <h5 class="card-title">Avocado</h5>
+                                       <img draggable="false"  src="file:///E:/New%20folder%20(2)/NewProj/responsive-website-restaurant-main/assets/img/plate2.png">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card" onclick="orderbasket('Cheese Salad ',1.99); ">
+                                 
+                                    <div class="card-body">
+                                      <h5 class="card-title">Cheese Salad</h5>
+                                      <img draggable="false"  src="file:///E:/New%20folder%20(2)/NewProj/responsive-website-restaurant-main/assets/img/plate3.png">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card" onclick="orderbasket('Card title',0.99);">
+
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <img src="file:///E:/New%20folder%20(2)/NewProj/responsive-website-restaurant-main/assets/img/movil-app.png" style="width: 140px;"> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-Drinks" role="tabpanel" aria-labelledby="pills-Drinks-tab"><div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                              <div class="card" onclick="orderbasket('Orange Jouice',2.99); ">
+                                <div class="card-body">
+                                  <h5 class="card-title">Orange Jouice</h5>
+                                   
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderbasket('Soft Drink',2.99);">
+                                <div class="card-body">
+                                  <h5 class="card-title">Soft Drink</h5>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderbasket('small water',2.99);">
+                                <div class="card-body">
+                                  <h5 class="card-title">small water</h5>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderbasket('Large Water',2.99);">
+                                <div class="card-body">
+                                  <h5 class="card-title">Large Water</h5>
+                                   
+                                </div>
+                              </div>
+                            </div>
+                          </div></div>
+                        <div class="tab-pane fade" id="pills-Sweets" role="tabpanel" aria-labelledby="pills-Sweets-tab"><div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                              <div class="card" onclick="orderbasket('Swees Roll',2.99);">
+                                <div class="card-body">
+                                  <h5 class="card-title">Swees Roll</h5>
+                                   
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderbasket('termasio',2.99);">
+                                <div class="card-body">
+                                  <h5 class="card-title">termasio</h5>
+                                   
+                                </div>
+                              </div>
+                            </div> 
+                          </div> 
+                        </div>
+                              <div class="tab-pane fade" id="pills-Checkout" role="tabpanel" aria-labelledby="pills-Checkout-tab">
+                                <div class="row row-cols-1 row-cols-md-1 g-4">
+                                <div class="col">
+                                  
+                                  <div class="col mb-3">
+                                    <div class="card mb-3"> 
+                                     
+                                    <div class="row mb-3">
+                                      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Customer Name</label>
+                                      <div class="col-sm-6">
+                                        <input type="text" class="rounded-pill text-center form-control form-control-lg" id="CustomerName" placeholder="type name">
+                                      </div>
+                                    </div>    
+                                    <div class="row mb-3">
+                                      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Customer Number</label>
+                                      <div class="col-sm-6">
+                                        <input type="text" class="rounded-pill text-center form-control form-control-lg" id="CustomerNumber" placeholder="insert number">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="col"> 
+                                  <div class="card mb-3">
+                                    <div class="row mb-3">
+                                      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Requested Amount</label>
+                                      <div class="col-sm-6">
+                                        <input type="value " class="rounded-pill text-center form-control form-control-lg" step="0.01" id="amount" disabled="true" placeholder="Amount">
+                                      </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Paid Amount</label>
+                                      <div class="col-sm-6">
+                                        <input type="text"  class="rounded-pill text-center form-control form-control-lg" value=0 id="paidamount" disabled='' >
+                                        <!-- <div class="modal fade" id="paidamount" tabindex="-1" aria-labelledby="examplemodallabel" aria-hidden="true">Paid Amount</div> -->
+                                      </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Remaining amount</label>
+                                      <div class="col-sm-6">
+                                        <input type="number" class="rounded-pill text-center form-control form-control-lg text-danger fw-bold" id="remaining" disabled="true" placeholder="Change">
+                                      </div>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-md-6 g-4 mb-3 ">
+                                        <button class="btn btn-sml col-sm-4" onclick="cataogeris(5.00); cutomerremaining()">5</button> 
+                                        <button class="btn btn-sml col-sm-4"onclick="cataogeris(10); cutomerremaining()" >10</button>
+                                        <button class="btn btn-sml col-sm-4" onclick="cataogeris(20); cutomerremaining()">20</button>
+                                        <button class="btn btn-sml col-sm-4" onclick="cataogeris(50); cutomerremaining()">50</button>
+                                        <button class="btn btn-sml col-sm-4" onclick="cataogeris(100); cutomerremaining()">100</button> 
+                                        <button class="btn btn-sml col-sm-4" onclick="cataogeris(200); cutomerremaining()">200</button>
+                                        <button class="btn btn-sml col-sm-4" onclick="cataogeris(1); cutomerremaining()">1</button> 
+                                        <button class="btn btn-sml col-sm-4"onclick="zero(0); cutomerremaining()" >0</button> 
+                                        <button class="btn btn-sml col-sm-4" onclick="zero('00'); cutomerremaining()" >00</button> 
+                                        <button class="btn btn-sml col-sm-4"onclick="dot('.'); cutomerremaining()" >.</button> 
+                                        <button  class="btn btn-warning col-sm-4" onclick="exactamount(); cutomerremaining();" >Exact Amount (<span id="exactamountspan"></span>)</button> 
+                                        <button  id="closeOrder" class="btn btn-dark col-sm-4" disabled='' >Close Order</button>
+                                      </div>
+                                           <div class="col text-center" >
+                                             <button class="btn btn-danger col-sm-2" onclick='C(0); cutomerremaining()' >Clear</button>
+                                             
+                                            </div>                        
+                                  </div>
+                                </div>
+                            </div>  
+                          </div>
+                     </div>
+                   </div>
+                </div>  
+                <div class="col-sm-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="d-flex justify-content-between align-items-center">
+                            <span>Cart</span><button onclick="clearbasket()"
+                             class="btn btn-sm btn-danger">Clear</button></h5>
+                        <hr>
+                        <ul id="orderlist" class="list-unstyled" 
+                         style="height: 50vh; overflow-y: auto;">
+                        </ul>
+                        <hr>
+                        <ul class="list-unstyled">
+                           <li class="d-flex justify-content-between align-items-center">
+                            <big>Items Quantity : </big><big  id="totalitems"class="fw-bold cart-text">0</big>
+                           </li>
+                           <li class="d-flex justify-content-between align-items-center">
+                            <big>Total Amount : </big> <big class="fw-bold"> $ <span id="totalcost"class="cart-text">0.00</span></big>
+                           </li>
+                           <hr>
+                           <li>
+                              <button disabled="" onclick="gotochek(); exactamountspan()" id="chekbtn" class="btn btn-primary btn-lg w-100"> CHECK OUT!</button>
+                           </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <script>
+            const orderidarray = [];
+            const orderitemsarray = [];
+            const orderpricearray = [];
+            const orderarray = [];
+                let i = 0;
+            function orderbasket(itemname,itemprice){
+                
+                orderidarray.push(i);
+                orderitemsarray.push (itemname);
+                orderpricearray.push (itemprice);
+                orderarray.push (itemname,itemprice);
+
+                
+              let orderlist = document.getElementById('orderlist');
+              const orderitem = document.createElement('li')
+              orderitem.className= 'd-flex justify-content-between align-items-center';
+              
+              const orderitempricespan = document.createElement('span')
+              const orderitemname = document.createTextNode(itemname)
+              const orderitemprice = document.createTextNode('   $ ' + itemprice)
+              
+              orderitempricespan.className='text-danger';
+              orderitempricespan.appendChild(orderitemprice);
+              const deletebutton =document.createElement('button');
+              const deletebuttontext=document.createTextNode('X');
+              deletebutton.setAttribute('onclick', 'deleteItem('+i+', this),exactamountspan('+i+', this)');
+              deletebutton.appendChild(deletebuttontext);
+              deletebutton.className='btn btn-danger rounded-pill'
+
+              const orderitemleftsidespan = document.createElement('span');
+              orderitemleftsidespan.appendChild(orderitemname);
+              orderitemleftsidespan.appendChild(orderitempricespan);
+              orderitem.appendChild(orderitemleftsidespan);
+              orderitem.appendChild(deletebutton);
+            //   orderitem.appendChild(orderitempricespan);
+              orderlist.appendChild(orderitem);
+
+              totalitems(); 
+              totalcost();
+
+              i++;
+              enablechek();
+            };   
+
+            function totalitems(){
+                document.getElementById('totalitems').innerText= orderitemsarray.length;
+                enablechek();
+
+            };
+            function totalcost(){
+                if(orderpricearray.length === 0){
+                    document.getElementById('totalcost').innerText=0.00;
+                } else {
+                 document.getElementById('totalcost').innerText= orderpricearray.
+                reduce(sumarray).toFixed(2);
+                document.getElementById('amount').value= orderpricearray.
+                reduce(sumarray).toFixed(2);
+                function sumarray (total,sum){
+                    return total + sum;
+                  };
+                };
+            };
+            function clearbasket(){
+                let orderlist = document.getElementById('orderlist');
+                document.getElementById('amount').value=0
+                orderlist.innerHTML = '';
+                orderitemsarray.length=0;
+                orderpricearray.length=0; 
+                orderarray.length=0;
+                orderidarray.length=0;
+                i = 0;
+                totalitems();
+                totalcost();
+                enablechek();
+                
+            }; 
+            function deleteItem(orderid,button){
+               const indexnum = orderidarray.indexOf(orderid);
+               orderidarray.splice(indexnum, 1);
+               orderitemsarray.splice(indexnum, 1);
+               orderpricearray.splice(indexnum, 1);
+               totalitems();
+               totalcost();
+               orderlist.removeChild(button.parentElement);
+               if(orderpricearray.length === 0) {
+                document.getElementById('amount').value = 0
+               }
+               enablechek();
+            };
+            // function paidamountinsert(number){
+              // if (paidamount.value == 0 && number == '00'){
+              //   paidamount.value = '0.';
+              //  if (paidamount.value == 0 && number == '0'){
+              //   paidamount.value = '0.';
+              // // } else if (paidamount.value == '' && number == '00'){
+              // //   paidamount.value = '0' ;
+              // } else if (paidamount.value.includes('.') === true && number == '.'){
+              //   paidamount.value = paidamount.value ;
+              // } else if (paidamount.value == '0' && parseInt(number) >0 ){
+              //   paidamount.value = number;
+                 
+            //       paidamount.value += number;
+                
+                
+            //   if(paidamount.value == '.'){
+            //     paidamount.value = '0.';
+            //   } 
+            // };
+
+            function cutomerremaining(){
+               const customerremaining = document.getElementById('remaining')
+               customerremaining.value = document.getElementById('paidamount').value - document.getElementById('amount').value
+
+               customerremaining.value = parseFloat(customerremaining.value).toFixed(2);
+
+              // if(paidamount.value === 0){
+              //       document.getElementById('remainingamount').innerText=0;
+              //   } else {
+              //    document.getElementById('remainingamount') = 
+              //   document.getElementById('paidamount').value - document.getElementById('amount')
+              //   };
+            };
+
+
+
+            function exactamount(){
+               paidamount.value = document.getElementById('amount').value;
+            closebtn();
+            };
+            function exactamountspan(){
+              document.getElementById('exactamountspan').innerText =
+               document.getElementById('amount').value;
+
+            };
+           
+            function cataogeris(bill){
+            paidamount.value= parseFloat(paidamount.value) + bill;
+
+            
+            closebtn();
+            // paidamountinsert();
+            
+            };
+            
+            function zero(bill){
+              // const paidamount = document.getElementById('paidamount')
+            paidamount.value= paidamount.value + bill;
+            closebtn();
+            paidamountinsert();
+            };
+            function dot(){
+              // paidamount.value =paidamount.value
+              paidamount.value=paidamount.value + '.'
+              closebtn();
+              paidamountinsert();
+            }
+
+            function C(){
+              paidamount.value = '0';
+              closebtn();
+            };
+            function closebtn(){
+              document.getElementById('closeOrder').disabled = true;
+              if (parseFloat(paidamount.value) >= parseFloat(document.getElementById('amount').value))
+              document.getElementById('closeOrder').disabled = false;
+            };
+            // function Remain(){
+            //   const 
+              
+            // };
+
+            function gotochek(){
+              const firstTabEl = document.getElementById('pills-Checkout-tab');
+              const firstTab = new bootstrap.Tab(firstTabEl);
+
+              firstTab.show();
+            };
+            function enablechek(){
+              document.getElementById('chekbtn').disabled = true;
+              if (orderidarray.length > 0) {
+              document.getElementById('chekbtn').disabled = false;
+             };
+             if (orderidarray.length == 0)  {
+              const backtofoodtab = document.getElementById('pills-Foods-tab');
+              const foodtab = new bootstrap.Tab(backtofoodtab);
+              foodtab.show();
+             }
+            };
+          
+        </script>
+
+
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/jquery-migrate-3.0.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/owl.carousel.min.js"></script>
+          <script src="js/jquery.waypoints.min.js"></script>
+          <script src="js/aos.js"></script>
+          <script src="js/bootstrap-datepicker.js"></script>  
+          <script src="js/jquery.timepicker.min.js"></script>
+          <script src="js/jquery.stellar.min.js"></script> 
+          <script src="js/scripts.js"></script> 
+
+
+
+    </body>
+</html>
